@@ -1,0 +1,241 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 690px;
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
+
+  /* Ajouter le logo en arrière-plan */
+  background-image: url('logo1/logo-cc.png'); /* Chemin mis à jour pour le dossier 'logo1' */
+  background-size: cover; /* S'assurer que l'image couvre le conteneur */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Ne pas répéter l'image */
+  filter: brightness(80%); /* Réduire la luminosité de l'image à 80% */
+}
+
+.contact-info {
+  text-align: center;
+  margin: 20px 0; /* Espacement autour du texte */
+  font-size: 16px;
+  color: #333; /* Couleur du texte */
+  background: rgba(255, 255, 255, 0.8); /* Fond blanc avec transparence pour lisibilité */
+  padding: 10px; /* Espacement intérieur */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+.contact-info p {
+  margin: 0; /* Enlever la marge par défaut */
+}
+
+.contact-info a {
+  color: #007bff; /* Couleur du lien */
+  text-decoration: none; /* Enlever le soulignement par défaut */
+  font-weight: bold; /* Mettre le lien en gras */
+  animation: blink 1s infinite; /* Appliquer l'animation */
+}
+
+.contact-info a:hover {
+  text-decoration: underline; /* Souligner le lien au survol */
+}
+
+/* Définition de l'animation de clignotement */
+@keyframes blink {
+  0% {
+    color: #007bff; /* Couleur initiale */
+  }
+  50% {
+    color: #ff0000; /* Couleur rouge pour le clignotement */
+  }
+  100% {
+    color: #007bff; /* Retour à la couleur initiale */
+  }
+}
+
+.wrapper {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  position: relative; /* Pour s'assurer que les éléments internes se positionnent correctement par rapport à la wrapper */
+}
+
+.wrapper .text-input {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.text-input .to-text {
+  border-radius: 0px;
+  border-left: 1px solid #ccc;
+}
+
+.text-input textarea {
+  height: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.text-input textarea::placeholder {
+  color: #b7b6b6;
+}
+
+.controls,
+li,
+.icons,
+.icons i {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  list-style: none;
+  padding: 12px 15px;
+}
+
+.controls .row .icons {
+  width: 38%;
+}
+
+.controls .row .icons i {
+  width: 50px;
+  color: #adadad;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  justify-content: center;
+}
+
+.controls .row.from .icons {
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+
+.controls .row.to .icons {
+  padding-left: 15px;
+  border-left: 1px solid #ccc;
+}
+
+.controls .row select {
+  color: #333;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: none;
+  padding-left: 5px;
+}
+
+.text-input textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+.controls .row select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.text-input textarea::-webkit-scrollbar-track,
+.controls .row select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.text-input textarea::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 8px;
+}
+
+.controls .row select::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+
+.controls .exchange {
+  color: #adadad;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.controls i:active {
+  transform: scale(0.9);
+}
+
+.container button {
+  width: 100%;
+  padding: 14px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #21283a;
+}
+
+@media (max-width: 660px) {
+  .container {
+    padding: 20px;
+  }
+
+  .wrapper .text-input {
+    flex-direction: column;
+  }
+
+  .text-input .to-text {
+    border-left: 0px;
+    border-top: 1px solid #ccc;
+  }
+
+  .text-input textarea {
+    height: 200px;
+  }
+
+  .controls .row .icons {
+    display: none;
+  }
+
+  .container button {
+    padding: 13px;
+    font-size: 16px;
+  }
+
+  .controls .row select {
+    font-size: 16px;
+  }
+
+  .controls .exchange {
+    font-size: 14px;
+  }
+}
+
+.translator-title {
+  /* centrer le titre au-dessus de la div en dessous */
+  text-align: center;
+  color: rgb(63, 63, 63);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
