@@ -1,73 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-<head>
-  <!-- balise méta par défaut pour les informations sur l'appareil -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="./styles.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  />
-  <!-- ajouter favicon -->
-  <link rel="icon" href="favicon.png" type="image/x-icon" />
-  <!-- Lien vers la feuille de style Animate.css -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <title>Traducteur des Langues par Béni Ntwali</title>
-</head>
+  <head>
+    <!-- balise méta par défaut pour les informations sur l'appareil -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- ajouter favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <!-- Lien vers la feuille de style Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Traducteur Universel de Langues</title>
+  </head>
 
-<body>
-  <div class="contact-info">
-    <p>Pour louer mes services en développement web ou design graphique, <a href="https://benintwali.rf.gd/" target="_blank">contactez-moi sur WhatsApp</a>.</p>
-  </div>
-  <div class="container animate__animated animate__fadeIn">
-    <h1 class="translator-title animate__animated animate__bounceInDown">
-      Traducteur des Langues par <a href="https://benintwali.rf.gd/" target="_blank">Béni Ntwali</a>
-    </h1>
-    <div class="wrapper animate__animated animate__fadeInUp">
-      <div class="text-input animate__animated animate__fadeInLeft">
-        <textarea
-          spellcheck="false"
-          class="from-text"
-          placeholder="Entrez le texte"
-        ></textarea>
-        <textarea
-          spellcheck="false"
-          disabled
-          readonly
-          class="to-text"
-          placeholder="Traduction"
-        ></textarea>
+  <body>
+    <div class="container animate__animated animate__fadeIn">
+      <h1 class="translator-title animate__animated animate__bounceInDown">
+        Traducteur de Langues par <a href="https://wa.me/message/DU4KQS5C6TV2K1">Béni Ntwali</a>
+      </h1>
+      <div class="wrapper animate__animated animate__fadeInUp">
+        <div class="text-input animate__animated animate__fadeInLeft">
+          <textarea
+            spellcheck="false"
+            class="from-text"
+            placeholder="Entrez le texte"
+          ></textarea>
+          <textarea
+            spellcheck="false"
+            disabled
+            readonly
+            class="to-text"
+            placeholder="Traduction"
+          ></textarea>
+        </div>
+        <ul class="controls animate__animated animate__fadeInRight">
+          <li class="row from">
+            <div class="icons">
+              <i id="from" class="fas fa-volume-up"></i>
+              <i id="from" class="fas fa-copy"></i>
+            </div>
+            <select></select>
+          </li>
+          <li class="exchange animate__animated animate__heartBeat">
+            <i class="fas fa-exchange-alt"></i>
+          </li>
+          <li class="row to">
+            <select></select>
+            <div class="icons">
+              <i id="to" class="fas fa-volume-up"></i>
+              <i id="to" class="fas fa-copy"></i>
+            </div>
+          </li>
+        </ul>
       </div>
-      <ul class="controls animate__animated animate__fadeInRight">
-        <li class="row from">
-          <div class="icons">
-            <i id="from" class="fas fa-volume-up"></i>
-            <i id="from" class="fas fa-copy"></i>
-          </div>
-          <select></select>
-        </li>
-        <li class="exchange animate__animated animate__heartBeat">
-          <i class="fas fa-exchange-alt"></i>
-        </li>
-        <li class="row to">
-          <select></select>
-          <div class="icons">
-            <i id="to" class="fas fa-volume-up"></i>
-            <i id="to" class="fas fa-copy"></i>
-          </div>
-        </li>
-      </ul>
+      <button class="animate__animated animate__fadeInUp" id="translate-btn">
+        Traduire le texte
+      </button>
     </div>
-    <button class="animate__animated animate__fadeInUp" id="translate-btn">
-      Traduire le texte
-    </button>
-  </div>
 
-  <script src="js/countries.js"></script>
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/countries.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
