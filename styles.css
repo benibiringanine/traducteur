@@ -1,4 +1,4 @@
- /* Import Google Font - Poppins */
+/* Import Google Font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
@@ -20,16 +20,9 @@ body {
   max-width: 690px;
   width: 100%;
   padding: 30px;
-  background: #fff;
+  background: #f0f0f0; /* Changer l'image de fond par une couleur grise */
   border-radius: 7px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
-
-  /* Ajouter le logo en arrière-plan */
-  background-image: url('logo-cc.png'); /* Chemin mis à jour pour le dossier 'logo1' */
-  background-size: cover; /* S'assurer que l'image couvre le conteneur */
-  background-position: center; /* Centrer l'image */
-  background-repeat: no-repeat; /* Ne pas répéter l'image */
-  filter: brightness(80%); /* Réduire la luminosité de l'image à 80% */
 }
 
 .wrapper {
@@ -46,6 +39,8 @@ body {
 .text-input .to-text {
   border-radius: 0px;
   border-left: 1px solid #ccc;
+  color: #fff; /* Couleur du texte en blanc pour le champ de traduction */
+  background-color: rgba(0, 0, 0, 0.2); /* Fond légèrement transparent pour meilleure lisibilité */
 }
 
 .text-input textarea {
