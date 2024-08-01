@@ -1,4 +1,4 @@
-/* Import Google Font - Poppins */
+ /* Import Google Font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
@@ -30,44 +30,6 @@ body {
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Ne pas répéter l'image */
   filter: brightness(80%); /* Réduire la luminosité de l'image à 80% */
-}
-
-.contact-info {
-  text-align: center;
-  margin: 20px 0; /* Espacement autour du texte */
-  font-size: 16px;
-  color: #333; /* Couleur du texte */
-  background: rgba(255, 255, 255, 0.8); /* Fond blanc avec transparence pour lisibilité */
-  padding: 10px; /* Espacement intérieur */
-  border-radius: 5px; /* Coins arrondis */
-}
-
-.contact-info p {
-  margin: 0; /* Enlever la marge par défaut */
-}
-
-.contact-info a {
-  color: #007bff; /* Couleur du lien */
-  text-decoration: none; /* Enlever le soulignement par défaut */
-  font-weight: bold; /* Mettre le lien en gras */
-  animation: blink 1s infinite; /* Appliquer l'animation */
-}
-
-.contact-info a:hover {
-  text-decoration: underline; /* Souligner le lien au survol */
-}
-
-/* Définition de l'animation de clignotement */
-@keyframes blink {
-  0% {
-    color: #007bff; /* Couleur initiale */
-  }
-  50% {
-    color: #ff0000; /* Couleur rouge pour le clignotement */
-  }
-  100% {
-    color: #007bff; /* Retour à la couleur initiale */
-  }
 }
 
 .wrapper {
